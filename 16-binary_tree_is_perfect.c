@@ -19,7 +19,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (!tree->right && !tree->left)
 		return (1);
 
-	hgt = binary_tree_hgt(tree);
+	hgt = binary_tree_height(tree);
 	nds = binary_tree_size(tree);
 
 	pwr = (size_t)_exponentiate(2, hgt + 1);
